@@ -15,8 +15,8 @@ export default function AnimatedBackground() {
   }));
 
   return (
-    /* We keep the class name but ensure the CSS targets it only 
-       when inside .loging2-container */
+     
+      
     <div className="medical-bg">
       {elements.map((el) => (
         <span

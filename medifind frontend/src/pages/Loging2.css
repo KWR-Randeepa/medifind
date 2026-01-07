@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
 
-/* Scope everything strictly to the container */
+
 .loging2-container {
     margin: 0;
     padding: 0;
@@ -13,18 +13,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Context for absolute children */
+    position: relative; 
 }
 
 /* Ensure background stays within this page only */
 .loging2-container .medical-bg {
-    position: absolute; /* Changed from fixed to absolute to contain it */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 0;
-    pointer-events: none; /* Prevents background from blocking clicks */
+    pointer-events: none; 
 }
 
 .loging2-container .symbol {
@@ -63,7 +63,7 @@
     border-radius: 50%;
 }
 
-/* UNIQUE ANIMATIONS - Renamed to avoid global conflict */
+
 @keyframes login-floatFullPage {
     0% { transform: translate(0, 0) rotate(0deg); }
     33% { transform: translate(30px, -50px) rotate(120deg); }
