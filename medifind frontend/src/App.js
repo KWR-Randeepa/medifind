@@ -10,8 +10,6 @@ import Home from './pages/Home';
 import AdminAddMedicinePage from './pages/admin/addMedicine';
 import AdminPannel from './pages/admin/adminPannel';
 import Registration from './components/Pharmacy_reg/Registration';
-import PharmacyHero from './pages/PharmacyHero';
-
 import PharmacyReview from './pages/PharmacyReview';
 import Stats from './pages/Stats';
 import Footer from './pages/Footer';
@@ -22,6 +20,7 @@ import MediTools from './components/MediTools/MediTools';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
+import Loging2 from './pages/Loging2';
 
 function App() {
   return (
@@ -43,7 +42,7 @@ function AppContent() {
     <div className="App">
       {!isAdminRoute && <Navbar />}
       <Routes>
-        <Route path="/" element={<><HeroSection /><PharmacyHero/><Stats/><HealthNews/><InteractionChecker/><MediTools/><PharmacyReview/><Footer/></>} />
+        <Route path="/" element={<><HeroSection /><Loging2/><Stats/><HealthNews/><InteractionChecker/><MediTools/><PharmacyReview/><Footer/></>} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/terms-of-use" element={<TermsOfUse />} />
